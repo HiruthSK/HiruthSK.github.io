@@ -5,6 +5,8 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     color: darkslategray;
+    /* Adding background image */
+    background-image: url(../images/white_brick_wall.png);
 }
 
 h1 {
@@ -36,7 +38,25 @@ nav ul a {
 
 /* selecting element with ID value */
 #treatofweek {
-    background-color: cadetblue;
+    /* color image repeat position-x postion-y */
+    background: cadetblue url(../images/bread.jpg) no-repeat center;
+    
+    /* background-size */
+    background-size: cover;
+
+    font-size: 1.25rem;
+    /* 1.25 x 16px = 20px */
+    padding: 1em;
+    /* 1 x 20-px = 20px */
+    
+
+    /* viewport based unit */
+    /* width 100vw */
+    /* height 100vh */
+    /* scroll wheel bc it has space coming which is not ideal */
+
+    /* height 100vh */
+    /* height is 100% of the row */
 }
 
 /* selecting element of Class */
@@ -58,8 +78,13 @@ nav ul a {
     Combinators
     Direct child selector - will only select child of the parent
 */
+/* CSS typography properties */
 article>p {
     font-size: 24px;
+    font-weight: bold;
+    line-height: 1.5;
+    text-transform: capitalize;
+    text-align: center;
 }
 
 /* 
@@ -166,4 +191,8 @@ article h2 {
 /* (0,0,1,1) */
 footer.site-footer {
     background-color: #d5836c;
+}
+
+aside h3{
+    font-size: 2em;
 }
