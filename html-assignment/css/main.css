@@ -1,0 +1,50 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+header, footer{
+    background-color: rgb(199, 164, 153);
+}
+
+.site-title{
+    color: rgb(48, 0, 180);
+}
+
+#my-image{
+    box-shadow: 0 0 2px 1px black;
+}
+
+article ul{
+    list-style: square;
+}
+
+article ul li:nth-child(odd){
+    background-color: aqua;
+}
+
+header ul{
+    list-style: none;
+}
+
+nav ul a{
+    border: 1px solid silver;
+}
+
+nav ul a,
+nav ul a:link,
+nav ul a:visited{
+    text-decoration: none;
+    background-color: brown;
+}
+
+nav ul a:hover{
+    background-color: gold;
+    border: 1px solid black;
+ 
+}
+
+nav ul a:focus{
+    background-color: goldenrod;
+    border: 1px solid black;
+}
