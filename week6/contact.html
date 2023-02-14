@@ -1,108 +1,111 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>Reggie's Coffe shop - Home</title>
-        <link rel="stylesheet" href="./css/main.css">
-    </head>
 
-    <body>
-        <!-- This is an HTML Comment -->
-        <!-- Site Header -->
-        <header>
-            <!-- h1 is the most important heading. We can use 6 levels of headings from h1 to h6 -->
-            <h1>Reggie's Coffe Shop</h1>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="contact.html">Contact Us</a></li>
-                </ul>
-            </nav>
-        </header>
-        <!-- Starting the main cintent of the page -->
-        <main>
-            <h2>Contact Us Pls!</h2>
-            <!-- Adding Tabl For Hours OF Operation -->
-            <table>
-                <caption>Hours Of Operation</caption>
-                <thead>
-                    <tr>
-                        <th>Day</th>
-                        <th>Hours</th>                
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Monday - Friday</td>
-                        <td>6AM - 9 PM</td>
-                    </tr>
-                    <tr>
-                        <td>Saturday</td>
-                        <td>8AM - 11PM</td>
-                    </tr>
-                    <tr>
-                        <td>Sunday</td>
-                        <td>CLOSED</td>
-                    </tr>
-                </tbody>
-            </table>
-            <!-- Adding section for contact form -->
-            <section>
-                <h3>We would love to hear from you</h3>
-                <!-- Adding a form -->
-                <form action="thanks.html" method="get">
-                    <div>
+<head>
+    <meta charset="utf-8">
+    <title>Reggie's Coffe shop - Home</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
 
-                        <label for="fullame">Name</label>
-                        <input type="text" id="fullname" name="fullname" placeholder="John Doe">
-                    </div>
+<body>
+    <!-- This is an HTML Comment -->
+    <!-- Site Header -->
+    <header>
+        <!-- h1 is the most important heading. We can use 6 levels of headings from h1 to h6 -->
+        <h1>Reggie's Coffe Shop</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Starting the main cintent of the page -->
+    <main>
+        <h2>Contact Us Pls!</h2>
+        <!-- Adding Tabl For Hours OF Operation -->
+        <table>
+            <caption>Hours Of Operation</caption>
+            <thead>
+                <tr>
+                    <th>Day</th>
+                    <th>Hours</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Monday - Friday</td>
+                    <td>6AM - 9 PM</td>
+                </tr>
+                <tr>
+                    <td>Saturday</td>
+                    <td>8AM - 11PM</td>
+                </tr>
+                <tr>
+                    <td>Sunday</td>
+                    <td>CLOSED</td>
+                </tr>
+            </tbody>
+        </table>
+        <!-- Adding section for contact form -->
+        <section>
+            <h3>We would love to hear from you</h3>
+            <!-- Adding a form -->
+            <form action="thanks.html" method="get">
+                <div>
 
-                    <div>
-                        <label for="youremail">Email</label>
-                        <input type="email" name="youremail" id="youremail" placeholder="johndoe@email.com" value="@email.com" required>
-                    </div>
+                    <label for="fullame">Name</label>
+                    <input type="text" id="fullname" name="fullname" placeholder="John Doe">
+                </div>
 
-                    <div>
-                        <label for="message">Message</label>
-                        <textarea name="message" id="message" placeholder="Enter message here"></textarea>
-                    </div>
+                <div>
+                    <label for="youremail">Email</label>
+                    <input type="email" name="youremail" id="youremail" placeholder="johndoe@email.com"
+                        value="@email.com" required>
+                </div>
 
-                    <div>
-                        <label for="tickets">How many tickets? (Sold in pairs)</label>
-                        <input type="number" name="tickets" id="tickets" min="2" max="10" step="2">
-                    </div>
-                    
-                    <div>
-                        <label for="row">Row</label>
-                        <select name="row" id="row">
-                            <option value="front">Front Row</option>
-                            <option value="center" selected>Center Row</option>
-                            <option value="back">Back Row</option>
-                        </select>
-                    </div>
+                <div>
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" placeholder="Enter message here"></textarea>
+                </div>
 
-                    <div>
-                        <h3>Have YOU been here before?</h3>
-                        <label for="yes">Yes</label>
-                        <input type="radio" name="past" id="yes">
+                <div>
+                    <label for="tickets">How many tickets? (Sold in pairs)</label>
+                    <input type="number" name="tickets" id="tickets" min="2" max="10" step="2">
+                </div>
 
-                        <label for="no">No</label>
-                        <input type="radio" id="no" name="past" checked>
-                    </div>
+                <div>
+                    <label for="row">Row</label>
+                    <select name="row" id="row">
+                        <option value="front">Front Row</option>
+                        <option value="center" selected>Center Row</option>
+                        <option value="back">Back Row</option>
+                    </select>
+                </div>
 
-                    <div>
-                        <h3>Policies</h3>
-                        <input type="checkbox" name="policies" id="policies" required>
-                        <label for="policies">I Agree to the Terms & Conditions</label>
-                    </div>
-                    <button type="submit">Submit</button>
-                </form>
-            </section>
-        </main>
-        <hr>
-        <!-- Site Footer -->
-        <footer class="site-footer">
-            Copyright &copy; Reggie's coffee shop, 2023
-        </footer>
-    </body>
+                <div>
+                    <h3>Have YOU been here before?</h3>
+                    <label for="yes">Yes</label>
+                    <input type="radio" name="past" id="yes">
+
+                    <label for="no">No</label>
+                    <input type="radio" id="no" name="past" checked>
+                </div>
+
+                <div>
+                    <h3>Policies</h3>
+                    <input type="checkbox" name="policies" id="policies" required>
+                    <label for="policies">I Agree to the Terms & Conditions</label>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+    <hr>
+    <!-- Site Footer -->
+    <footer class="site-footer">
+        Copyright &copy; Reggie's coffee shop, 2023
+    </footer>
+</body>
+
 </html>
