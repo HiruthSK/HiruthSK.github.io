@@ -2,44 +2,55 @@
     This is a css comment 
     Shortcut for adding a comment is ctrl + /
 */
-body{
+body {
     font-family: Arial, Helvetica, sans-serif;
     color: darkslategray;
 }
-h1{
+
+h1 {
     color: cadetblue;
 }
-p{
+
+p {
     background-color: antiquewhite;
 }
+
 /* selecting multiple elements */
-h1,h2,h3,h4{
+h1,
+h2,
+h3,
+h4 {
     text-decoration: underline;
 }
+
 /* seecting child elements */
-nav ul{
+nav ul {
     list-style: none;
 }
+
 /* selecting child element with multiple level */
-nav ul a{
+nav ul a {
     color: darkslategray;
     text-decoration: none;
 }
+
 /* selecting element with ID value */
-#treatofweek{
+#treatofweek {
     background-color: cadetblue;
 }
 
 /* selecting element of Class */
-.blue-link{
+.blue-link {
     background-color: darkslategray;
     color: antiquewhite;
     text-decoration: none;
 }
+
 .large-text {
     font-size: 20px;
 }
-.white-text{
+
+.white-text {
     color: antiquewhite;
 }
 
@@ -47,7 +58,7 @@ nav ul a{
     Combinators
     Direct child selector - will only select child of the parent
 */
-article>p{
+article>p {
     font-size: 24px;
 }
 
@@ -55,16 +66,16 @@ article>p{
     Adjacent
     Selects the element which is the very next sibling to the selected element
 */
-h3+ul{
-    border:1px solid black ;
+h3+ul {
+    border: 1px solid black;
 }
 
-h3~p{
+h3~p {
     text-transform: uppercase;
 }
 
 /* Attribute Selectors */
-[href="#treatofweek"]{
+[href="#treatofweek"] {
     font-weight: bold;
     font-size: 24px;
 }
@@ -73,9 +84,10 @@ h3~p{
     border: 4px solid darkslategray;
 } */
 
-[src$=".jpg"]{
+[src$=".jpg"] {
     border: 4px solid darkslategray;
 }
+
 /* Psuedo Classes */
 /* Styling Navigation */
 nav ul a,
@@ -85,6 +97,7 @@ nav ul a:visited {
     /* horizontal, vertical, blur, spread, color */
     box-shadow: -2px 2px 4px 2px black;
 }
+
 nav ul .current,
 nav ul a:hover,
 nav ul a:focus {
@@ -94,33 +107,34 @@ nav ul a:focus {
 
 /* Position Selector */
 /* first-child and last-child */
-aside ul li:first-child{
+aside ul li:first-child {
     font-weight: bold;
 }
 
-section ol li:last-child{
+section ol li:last-child {
     font-weight: bold;
 }
 
 /* styling table */
-table{
+table {
     border-collapse: collapse;
 }
+
 /* n-th child selector - even/odd */
 /* hex color value with 6 characters */
-tbody tr:nth-child(even){
+tbody tr:nth-child(even) {
     background-color: #d5836c;
 }
 
 /* Using nth-child with n */
 /* where n is 0,1,2,3,4..... until number elements */
 table th:nth-child(n),
-table td:nth-child(n){
+table td:nth-child(n) {
     border: 1px solid black;
 }
 
 /* using  formula in nth-child selector */
-table td:nth-child(2n+1){
+table td:nth-child(2n+1) {
     background-color: rgba(0, 0, 0, 0.2);
 }
 
@@ -150,6 +164,6 @@ article h2 {
 }
 
 /* (0,0,1,1) */
-footer.site-footer{
+footer.site-footer {
     background-color: #d5836c;
 }
