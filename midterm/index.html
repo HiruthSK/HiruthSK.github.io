@@ -20,16 +20,9 @@
             </div>
             <div class="navi">
                 <nav>
-                    <ul>
-                        <li>
-                            <a href="./index.html">Home</a>
-                        </li>
-                        <li>
-                            <a href="./story.html">Story</a>
-                        </li>
-                        <li>
-                            <a href="./about.html">Contact</a>
-                        </li>
+                    <a href="./index.html">Home</a>
+                    <a href="./story.html">Story</a>
+                    <a href="./about.html">Contact</a>
                     </ul>
                 </nav>
             </div>
@@ -39,7 +32,6 @@
             <article>
                 <h2>
                     Life of a Starfish
-
                 </h2>
                 <img src="./images/lone-starfish.jpg" alt="a starfish" class="pic">
                 <p>
@@ -92,34 +84,37 @@
             </article>
             <section>
                 <h3>Contact to learn more</h3>
-                <form action="thanks.html" method="get">
-                    <div>
-                        <label for="fullame">Your Name</label>
-                        <input type="text" id="fullname" name="fullname">
-                    </div>
+                <div class="fm">
 
-                    <div>
-                        <label for="youremail">Your Email</label>
-                        <input type="email" name="youremail" id="youremail">
-                    </div>
+                    <form action="thanks.html" method="get">
+                        <div>
+                            <label class="tx" for="fullame">Your Name</label>
+                            <input type="text" id="fullname" name="fullname">
+                        </div>
 
-                    <div>
-                        <label for="message">Your Message</label>
-                        <textarea name="message" id="message"></textarea>
-                    </div>
+                        <div>
+                            <label class="tx" for="youremail">Your Email</label>
+                            <input type="email" name="youremail" id="youremail">
+                        </div>
 
-                    <div>
-                        <h4>Would you like to visit the starfish?</h4>
-                        <label for="yes">Yes</label>
-                        <input type="radio" name="past" id="yes">
+                        <div>
+                            <label class="tx" for="message">Your Message</label>
+                            <textarea name="message" id="message"></textarea>
+                        </div>
 
-                        <label for="no">No</label>
-                        <input type="radio" id="no" name="past">
+                        <div class="sl">
+                            <h4>Would you like to visit the starfish?</h4>
+                            <label for="yes">Yes</label>
+                            <input type="radio" name="past" id="yes">
 
-                        <label for="maybe">Maybe</label>
-                        <input type="radio" name="past" id="maybe">
-                    </div>
-                    <button type="submit">Send</button>
+                            <label for="no">No</label>
+                            <input type="radio" id="no" name="past">
+
+                            <label for="maybe">Maybe</label>
+                            <input type="radio" name="past" id="maybe">
+                        </div>
+                        <button type="submit">Send</button>
+                </div>
                 </form>
             </section>
         </main>
