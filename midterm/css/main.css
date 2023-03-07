@@ -46,7 +46,7 @@ h1 {
     border-right: 1px solid black;
 }
 
-.navi a:last-child{
+.navi a:last-child {
     border-right: none;
 }
 
@@ -57,12 +57,12 @@ h1 {
     padding-bottom: 20px;
 }
 
-p{
+p {
     font-size: 12px;
 }
 
-main{
-    padding:5px;
+main {
+    padding: 5px;
 }
 
 .fm {
@@ -73,25 +73,25 @@ main{
     font-weight: bold;
 }
 
-#fullname{
+#fullname {
     width: 100%;
     margin-top: 0.5em;
     margin-bottom: 0.5em;
 }
 
-#youremail{
+#youremail {
     width: 100%;
     margin-top: 0.5em;
     margin-bottom: 0.5em;
 }
 
-#message{
+#message {
     width: 100%;
     padding-bottom: 40px;
     margin-top: 0.5em;
 }
 
-.sl{
+.sl {
     margin-bottom: 1em;
 }
 
@@ -103,26 +103,26 @@ button {
     font-size: 10px;
     text-decoration: none;
     cursor: pointer;
-  }
+}
 
-.site-footer{
+.site-footer {
 
     font-size: 12px;
     text-align: right;
     padding: 2.5% 2.5%;
 }
 
-ul{
+ul {
     font-size: 12px;
     padding-left: 2.5%;
 }
 
-h2{
+h2 {
     margin-bottom: 8px;
     font-weight: normal;
 }
 
-h3{
+h3 {
     clear: both;
     margin-bottom: 8px;
 }
