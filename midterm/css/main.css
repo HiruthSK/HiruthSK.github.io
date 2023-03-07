@@ -12,22 +12,36 @@ body {
     margin-bottom: 1%;
 }
 
+.banner {
+    position: relative;
+}
+
+header img {
+    width: 100%;
+}
+
 h1 {
+    position:absolute;
     font-weight: normal;
     color: white;
     font-size: 30pt;
-    margin: 0;
     text-align: center;
     text-transform: capitalize;
-    padding-bottom: 5%;
-    padding-top: 20%;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+
 }
 
-.banner {
-    background: url(./images/lone-starfish-wide.jpg) no-repeat center;
+/* 
+add background image to header or so I used until I realized what it was asking in the rubrics
+.banner { 
+    background: url(../images/lone-starfish-wide.jpg) no-repeat center;
     background-size: cover;
     margin: 0;
 }
+*/
 
 .navi {
     width: 100%;
@@ -38,6 +52,7 @@ h1 {
     padding-top: 0.5%;
     float: left;
     width: 33%;
+    /* Equi width the 3 element nav*/
     text-align: center;
     font-size: 20px;
     text-transform: uppercase;
@@ -50,6 +65,7 @@ h1 {
     border-right: none;
 }
 
+/* postion and resize the image so text can wrap as well */
 .pic {
     width: 27%;
     float: left;
@@ -106,7 +122,6 @@ button {
 }
 
 .site-footer {
-
     font-size: 12px;
     text-align: right;
     padding: 2.5% 2.5%;
@@ -123,6 +138,7 @@ h2 {
 }
 
 h3 {
+    /* clear to fix float errors */
     clear: both;
     margin-bottom: 8px;
 }
