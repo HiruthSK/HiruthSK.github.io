@@ -12,3 +12,20 @@ h2{
 p{
     font-family: 'Delicious Handrawn', cursive;
 }
+
+h1 i::before{
+    font-size: 6rem;
+    color: cornflowerblue;
+}
+
+.fa-code{
+    font-size: 1rem;
+    color: yellow;
+}
+
+.map iframe{
+    display: block;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
