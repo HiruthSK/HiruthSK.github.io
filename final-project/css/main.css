@@ -148,7 +148,7 @@ body {
     line-height: 1.5;
 }
 
-.container{
+.container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 1em;
@@ -215,13 +215,13 @@ footer {
     width: 100%;
 }
 
-nav{
+nav {
     width: 100%;
     margin: 0;
     display: block;
 }
 
-nav ul li{
+nav ul li {
     height: auto;
     text-align: center;
     width: 100%;
@@ -229,14 +229,14 @@ nav ul li{
     align-items: center;
 }
 
-nav ul{
+nav ul {
     display: grid;
     justify-items: center;
 }
 
 nav ul li a,
 nav ul li a:link,
-nav ul li a:visited{
+nav ul li a:visited {
     color: rgb(199, 139, 7);
     background-color: rgb(34, 34, 34);
     text-decoration: none;
@@ -247,38 +247,38 @@ nav ul li a:visited{
 }
 
 nav ul li a:hover,
-nav ul li a:focus{
+nav ul li a:focus {
     background-color: rgb(199, 139, 7);
-    color: rgb(34, 34, 34); 
+    color: rgb(34, 34, 34);
 }
 
 nav ul li .active,
 nav ul li .active:link,
-nav ul li .active:visited{
+nav ul li .active:visited {
     background-color: rgb(199, 139, 7);
     color: rgb(34, 34, 34);
 }
 
 nav ul li .active:hover,
-nav ul li .active:focus{
+nav ul li .active:focus {
     background-color: rgb(34, 34, 34);
     color: rgb(199, 139, 7);
 }
 
-nav form{
+nav form {
     display: flex;
     justify-content: center;
     height: 50px;
     padding: 0 3% 3% 3%;
 }
 
-#searchbox{
+#searchbox {
     color: rgb(34, 34, 34);
     font-size: 15px;
     height: 30px;
 }
 
-nav form button{
+nav form button {
     color: rgb(199, 139, 7);
     font-size: 20px;
     border: 1px solid rgb(199, 139, 7);
@@ -288,61 +288,54 @@ nav form button{
     height: 30px;
 }
 
-.banner{
-    position: relative;
-    justify-content: center;
+.banner {
     color: white;
     width: 100%;
     margin: 0;
     padding: 0;
     border: 0;
-    overflow-x: hidden;
 }
 
-.welcome{
-    position: absolute;
-    float: left;
-    top: 10%;
-    bottom: 10%;
+.welcome {
     background-color: rgba(0, 0, 0, 0.6);
     padding-left: 1%;
     padding-right: 3%;
 }
 
-.welcome h1{
+.welcome h1 {
     font-size: 3.755rem;
 }
 
-.bannerimage{
+.bannerimage {
     width: auto;
     height: 500px;
     object-fit: cover;
 }
 
-.connect{
+.connect {
     background-color: rgb(199, 139, 7);
     padding: 3%;
     border: 0;
     font-size: 1em;
 }
 
-.about{
+.about {
     background-color: rgb(255, 230, 172);
     margin: 0;
     padding: 10px;
 }
 
-.aboutimage{
+.aboutimage {
     width: 100%;
     height: auto;
     margin-bottom: 0;
 }
 
-.about h2{
+.about h2 {
     margin-top: 10px;
 }
 
-.services{
+.services {
     background-color: white;
     padding: 10px;
     clear: both;
@@ -352,7 +345,7 @@ nav form button{
 .marketing,
 .video,
 .web,
-.print{
+.print {
     background-color: rgb(255, 230, 172);
     margin-top: 10px;
 }
@@ -361,7 +354,7 @@ nav form button{
 .marketing img,
 .video img,
 .web img,
-.print img{
+.print img {
     width: 100%;
     height: auto;
 }
@@ -375,40 +368,41 @@ nav form button{
 .marketing p,
 .video p,
 .web p,
-.print p{
+.print p {
     padding: 10px;
 }
+
 .digital button,
 .marketing button,
 .video button,
 .web button,
-.print button{
+.print button {
     margin: 10PX;
 }
 
-button{
+button {
     color: white;
     font-size: 20px;
     border: 0;
     background-color: rgb(34, 34, 34);
     cursor: pointer;
-    width:200px;
+    width: 200px;
     height: 50px;
 }
 
-.vision{
-    position:relative;
+.vision {
+    position: relative;
     color: white;
 }
 
-.vision img{
+.vision img {
     width: 100%;
     height: 250px;
     object-fit: cover;
     margin: 0;
 }
 
-.visionc{
+.visionc {
     position: absolute;
     float: left;
     top: 0%;
@@ -416,211 +410,219 @@ button{
     padding: 20px;
 }
 
-.team{
-    padding : 10px;
+.team {
+    padding: 10px;
 }
 
 .john1,
 .johni,
 .bob1,
-.bobi{
+.bobi {
     background-color: rgb(255, 230, 172);
     margin: 0;
     padding: 0;
 }
 
 .john1,
-.bob1{
+.bob1 {
     padding: 12px;
 }
+
 .bob1 h4,
-.john1 h4{
+.john1 h4 {
     margin: 0 5px 0 5px;
 }
 
 .bob1 h5,
-.john1 h5{
+.john1 h5 {
     margin: 0 5px 0 5px;
     border-bottom: 3px solid rgb(199, 139, 7);
 }
 
 .johni,
-.bobi{
+.bobi {
     max-width: 100%;
     width: 100%;
     height: auto;
-    overflow:hidden;
+    overflow: hidden;
     object-fit: cover;
     margin-top: 5px;
 }
 
 .bob1 p,
-.john1 p{
+.john1 p {
     padding: 10px;
 }
 
-.contact{
+.contact {
     margin: 1%;
 }
 
 .c1,
-.c1 h3{
+.c1 h3 {
     margin-top: 0;
     padding-top: 0;
 }
 
-.c1{
-    display:flex;
+.c1 {
+    display: flex;
     flex-direction: column;
-  }
-  
-.c1 label:nth-child(n),
-.c1 input:nth-child(n){
-    flex-grow: 1;
-    width:100%;
 }
 
-.c1 button{
+.c1 label:nth-child(n),
+.c1 input:nth-child(n) {
     flex-grow: 1;
-    width:100px;
-    height: 20px;
+    width: 100%;
+}
+
+.c1 button {
+    flex-grow: 1;
+    width: 100px;
+    max-height: 50px;
     color: rgb(199, 139, 7);
 }
 
-.c1 textarea:nth-child(n){
+.c1 textarea:nth-child(n) {
     flex-grow: 1;
-    width:100%;
+    width: 100%;
     height: 120px;
 }
 
-table{
+table {
     border: 1px solid black;
     width: 100%;
 }
 
-caption h3{
+caption h3 {
     display: inline-block;
 }
 
-th{
+th {
     border: 1px solid black;
     text-align: center;
     padding: 20px;
     background-color: rgb(255, 230, 172);
 }
 
-th, 
-td{
+th,
+td {
     height: 4em;
     border: 1px solid black;
     padding: 20px;
 }
 
-footer{
-    padding: 10px; 
+footer {
+    padding: 10px;
     color: rgb(199, 139, 7);
 }
 
 footer a:link,
 footer a:visited,
 footer a:hover,
-footer a:focus{
+footer a:focus {
     color: rgb(199, 139, 7);
 }
 
 @media screen and (min-width:800px) {
-    
-    nav{
+
+    nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
-    .bannerimage{
-        width:100%
+    .bannerimage {
+        width: 100%
     }
 
-    .welcome{
-        margin: 20px;
+    .welcome {
+        width: 100%;
+        float: left;
+        margin-right: 500px;
+
     }
 
-    .logo{
-      background-color: rgb(34, 34, 34);
-      float: left;
-      width: auto;
+    .logo {
+        background-color: rgb(34, 34, 34);
+        float: left;
+        width: auto;
     }
 
-    nav ul{
-      display: block;
-      float: left;
-      margin: 40px 0px 0 0;
+    nav ul {
+        display: block;
+        float: left;
+        margin: 40px 0px 0 0;
     }
 
-    nav ul li{
-      display: inline;
-      padding: 10px;
+    nav ul li {
+        display: inline;
+        padding: 10px;
     }
 
     nav ul li a,
     nav ul li a:link,
-    nav ul li a:visited{/* float: left; */
-      display: inline;
-      width: auto;
-      padding: 10px;
+    nav ul li a:visited {
+        /* float: left; */
+        display: inline;
+        width: auto;
+        padding: 10px;
     }
 
-    .about{
+    .about {
         height: auto;
         margin: auto;
         padding-left: 5%;
         padding-right: 5%;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-template-areas: 
-        "on tw";
+        grid-template-areas:
+            "on tw";
     }
 
-    .aboutimage{
+    .aboutimage {
         height: auto;
-        grid-area:on;
+        grid-area: on;
     }
 
-    .aboutt{
+    .aboutt {
         padding-left: 20px;
         grid-area: tw;
     }
 
-    .services{
+    .services {
         clear: both;
         padding-left: 5%;
         padding-right: 5%;
         display: grid;
         grid-template-columns: repeat(6, 1fr);
         grid-template-rows: 0.5fr 5fr 5fr;
-        grid-template-areas: 
-        "six six six six six six"
-        "one one one two two two"
-        "three three four four five five";
+        grid-template-areas:
+            "six six six six six six"
+            "one one one two two two"
+            "three three four four five five";
     }
 
-    .services h2{
-        grid-area:six ;
+    .services h2 {
+        grid-area: six;
     }
 
-    .services .digital{
+    .services .digital {
         grid-area: one;
     }
 
-    .services .marketing{
+    .services .marketing {
         grid-area: two;
     }
-    
-    .services .video{
+
+    .services .video {
         grid-area: three;
     }
 
-    .services .web{
+    .services .web {
         grid-area: four;
     }
 
-    .services .print{
+    .services .print {
         grid-area: five;
     }
 
@@ -628,76 +630,78 @@ footer a:focus{
     .marketing,
     .video,
     .web,
-    .print{
+    .print {
         margin: 2.5%;
     }
 
-    .visionc{
+    .visionc {
         padding-left: 5%;
         padding-right: 5%;
     }
 
-    .team{
-        width:100%;
+    .team {
+        width: 100%;
         padding-left: 10%;
         padding-right: 10%;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: 0.5fr 3fr 3fr;
-        grid-template-areas: 
-        "zerow zerow"
-        "onew twow"
-        "threew fourw";
+        grid-template-areas:
+            "zerow zerow"
+            "onew twow"
+            "threew fourw";
         grid-gap: 20px 0px;
     }
 
-    .team h2{
+    .team h2 {
         grid-area: zerow;
     }
 
-    .team .johni{
+    .team .johni {
         grid-area: onew;
     }
 
-    .team .john1{
+    .team .john1 {
         grid-area: twow;
     }
 
-    .team .bobi{
+    .team .bobi {
         grid-area: fourw;
     }
-    
-    .team .bob1{
-        grid-area: threew;
-    } 
 
-    .contact{
-        width:100%;
+    .team .bob1 {
+        grid-area: threew;
+    }
+
+    .contact {
+        width: 100%;
         padding-left: 10%;
         padding-right: 10%;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: 0.5fr 5fr 3fr;
-        grid-template-areas: 
-        "zeroe zeroe"
-        "onee twoe"
-        "threee threee";
+        grid-template-rows: 0.5fr 3fr 3fr;
+        grid-template-areas:
+            "zeroe zeroe"
+            "onee twoe"
+            "threee threee";
         grid-gap: 20px 0px;
     }
 
-    .contact h2{
+    .contact h2 {
         grid-area: zeroe;
     }
-    
-    .contact .c1{
+
+    .contact .c1 {
         grid-area: onee;
         padding: 2rem;
     }
 
-    .contact .c2{
-        grid-area: three;
+    .contact .c2 {
+        grid-area: threee;
     }
 
-    .contact .c3{
+    .contact .c3 {
         grid-area: twoe;
     }
+
+}
