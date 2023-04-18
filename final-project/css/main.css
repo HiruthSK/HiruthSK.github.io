@@ -1,0 +1,412 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/************************************************ 
+                CUSTOM STYLES                   
+************************************************/
+/* Global Styles */
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+body {
+    line-height: 1.5;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1em;
+}
+
+*,
+*:after,
+*:before {
+    box-sizing: inherit;
+    line-height: inherit;
+}
+
+.clearfix::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-weight: bold;
+    margin: 1em 0 0.5em;
+}
+
+h1 {
+    font-size: 5.063rem;
+}
+
+h2 {
+    font-size: 3.375rem;
+}
+
+h3 {
+    font-size: 2.25rem;
+}
+
+h4 {
+    font-size: 1.5rem;
+}
+
+h5 {
+    font-size: 1rem;
+}
+
+/* top-bottom left-right */
+
+p {
+    margin: 1em 0;
+}
+
+header,
+footer {
+    background-color: rgb(34, 34, 34);
+    width: 100%;
+}
+
+/* rgb(34, 34, 34)rgb(255, 230, 172)rgb(199, 139, 7) */
+
+.logo {
+    background-color: rgb(199, 139, 7);
+    width: 100%;
+}
+
+nav{
+    width: 100%;
+    margin: 0;
+    display: block;
+}
+
+nav ul li{
+    height: auto;
+    text-align: center;
+    width: 100%;
+    display: grid;
+    align-items: center;
+}
+
+nav ul{
+    display: grid;
+    justify-items: center;
+}
+
+nav ul li a,
+nav ul li a:link,
+nav ul li a:visited{
+    color: rgb(199, 139, 7);
+    background-color: rgb(34, 34, 34);
+    text-decoration: none;
+    width: 100%;
+    height: 50px;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+nav ul li a:hover,
+nav ul li a:focus{
+    background-color: rgb(199, 139, 7);
+    color: rgb(34, 34, 34); 
+}
+
+nav ul li .active,
+nav ul li .active:link,
+nav ul li .active:visited{
+    background-color: rgb(199, 139, 7);
+    color: rgb(34, 34, 34);
+}
+
+nav ul li .active:hover,
+nav ul li .active:focus{
+    background-color: rgb(34, 34, 34);
+    color: rgb(199, 139, 7);
+}
+
+nav form{
+    display: inline-block;
+    height: 50px;
+    padding: 0 3% 3% 3%;
+}
+
+#searchbox{
+    color: #222222;
+    font-size: 20px;
+}
+
+nav form button{
+    color: rgb(199, 139, 7);
+    font-size: 20px;
+    border: 1px solid rgb(199, 139, 7);
+    background-color: rgb(34, 34, 34);
+    cursor: pointer;
+}
+
+.banner{
+    position: relative;
+    justify-content: center;
+    color: white;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    overflow-x: hidden;
+}
+
+.welcome{
+    position: absolute;
+    float: left;
+    top: 10%;
+    bottom: 10%;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding-left: 1%;
+    padding-right: 3%;
+}
+
+.welcome h1{
+    font-size: 3.755rem;
+}
+
+.bannerimage{
+    width: auto;
+    height: 500px;
+    object-fit: cover;
+}
+
+.connect{
+    background-color: rgb(199, 139, 7);
+    padding: 3%;
+    border: 0;
+    font-size: 1em;
+}
+
+.about{
+    background-color: rgb(255, 230, 172);
+    margin: 0;
+    padding: 10px;
+}
+
+.aboutimage{
+    width: 100%;
+    height: auto;
+    margin-bottom: 0;
+}
+
+.about h2{
+    margin-top: 10px;
+}
+
+.services{
+    background-color: white;
+    padding: 10px;
+    clear: both;
+}
+
+.digital,
+.marketing,
+.video,
+.web,
+.print{
+    background-color: rgb(255, 230, 172);
+    margin-top: 10px;
+}
+
+.digital img,
+.marketing img,
+.video img,
+.web img,
+.print img{
+    width: 100%;
+    height: auto;
+}
+
+button{
+    color: white;
+    font-size: 20px;
+    border: 0;
+    background-color: rgb(34, 34, 34);
+    cursor: pointer;
+    width:200px;
+    height: 50px;
+}
+
+.vision img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    position: relative;
+}
+
+.visionc{
+    position: absolute;
+    float: left;
+    top: 0%;
+    left: 0%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width:600px) {
+    nav{
+        display: inline;
+    }
+}
