@@ -242,7 +242,6 @@ nav ul li a:visited{
     text-decoration: none;
     width: 100%;
     height: 50px;
-    display: grid;
     justify-items: center;
     align-items: center;
 }
@@ -267,14 +266,16 @@ nav ul li .active:focus{
 }
 
 nav form{
-    display: inline-block;
+    display: flex;
+    justify-content: center;
     height: 50px;
     padding: 0 3% 3% 3%;
 }
 
 #searchbox{
-    color: #222222;
-    font-size: 20px;
+    color: rgb(34, 34, 34);
+    font-size: 15px;
+    height: 30px;
 }
 
 nav form button{
@@ -283,6 +284,8 @@ nav form button{
     border: 1px solid rgb(199, 139, 7);
     background-color: rgb(34, 34, 34);
     cursor: pointer;
+    width: 30px;
+    height: 30px;
 }
 
 .banner{
@@ -363,6 +366,26 @@ nav form button{
     height: auto;
 }
 
+.digital h3,
+.marketing h3,
+.video h3,
+.web h3,
+.print h3,
+.digital p,
+.marketing p,
+.video p,
+.web p,
+.print p{
+    padding: 10px;
+}
+.digital button,
+.marketing button,
+.video button,
+.web button,
+.print button{
+    margin: 10PX;
+}
+
 button{
     color: white;
     font-size: 20px;
@@ -373,11 +396,16 @@ button{
     height: 50px;
 }
 
+.vision{
+    position:relative;
+    color: white;
+}
+
 .vision img{
     width: 100%;
     height: 250px;
     object-fit: cover;
-    position: relative;
+    margin: 0;
 }
 
 .visionc{
@@ -385,13 +413,43 @@ button{
     float: left;
     top: 0%;
     left: 0%;
+    padding: 20px;
 }
 
+.team{
+    padding : 10px;
+}
 
+.john,
+.bob{
+    background-color: rgb(255, 230, 172);
+    margin-bottom: 1em;
+}
 
+.john1,
+.bob1{
+    padding: 12px;
+}
+.bob h4,
+.john h4{
+    margin: 0 5px 0 5px;
+}
 
+.bob h5,
+.john h5{
+    margin: 0 5px 0 5px;
+    border-bottom: 3px solid rgb(199, 139, 7);
+}
 
+.john img,
+.bob img{
+    max-width: 100%;
+}
 
+.bob p,
+.john p{
+    padding: 10px;
+}
 
 
 
@@ -407,6 +465,147 @@ button{
 
 @media screen and (min-width:600px) {
     nav{
-        display: inline;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin:auto;
+        padding: 20px;
     }
+
+    .bannerimage{
+        width:100%
+    }
+
+    .welcome{
+        margin: 20px;
+    }
+
+    .logo{
+      background-color: rgb(34, 34, 34);
+      float: left;
+      width: auto;
+    }
+
+    nav ul{
+      display: block;
+      float: left;
+      margin: 40px 0px 0 0;
+    }
+
+    nav ul li{
+      display: inline;
+      padding: 10px;
+    }
+
+    nav ul li a,
+    nav ul li a:link,
+    nav ul li a:visited{/* float: left; */
+      display: inline;
+      width: auto;
+      padding: 10px;
+    }
+
+    .about{
+        height: auto;
+        margin: auto;
+        padding-left: 5%;
+        padding-right: 5%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: 
+        "on tw";
+    }
+
+    .aboutimage{
+        height: auto;
+        grid-area:on;
+    }
+
+    .aboutt{
+        padding-left: 20px;
+        grid-area: tw;
+    }
+
+    .services{
+        clear: both;
+        padding-left: 5%;
+        padding-right: 5%;
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: 0.5fr 5fr 5fr;
+        grid-template-areas: 
+        "six six six six six six"
+        "one one one two two two"
+        "three three four four five five";
+    }
+
+    .services h2{
+        grid-area:six ;
+    }
+
+    .services .digital{
+        grid-area: one;
+    }
+
+    .services .marketing{
+        grid-area: two;
+    }
+    
+    .services .video{
+        grid-area: three;
+    }
+
+    .services .web{
+        grid-area: four;
+    }
+
+    .services .print{
+        grid-area: five;
+    }
+
+    .digital,
+    .marketing,
+    .video,
+    .web,
+    .print{
+        margin: 2.5%;
+    }
+
+    .visionc{
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    /* .team{
+        width:100%;
+        padding-left: 10%;
+        padding-right: 10%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 0.5fr 5fr 5fr;
+        grid-template-areas: 
+        "zero zero"
+        "onew twow"
+        "threew fourw";
+    }
+
+    .team h2{
+        grid-area: zero;
+    }
+
+    .team .johni{
+        grid-area: onew;
+    }
+
+    .team .john1{
+        grid-area: twow;
+    }
+
+    .team .bobi{
+        grid-area: threew;
+    }
+    
+    .team .bob1{
+        grid-area: ourw;
+    } */
 }
