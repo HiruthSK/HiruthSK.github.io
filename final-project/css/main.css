@@ -420,56 +420,117 @@ button{
     padding : 10px;
 }
 
-.john,
-.bob{
+.john1,
+.johni,
+.bob1,
+.bobi{
     background-color: rgb(255, 230, 172);
-    margin-bottom: 1em;
+    margin: 0;
+    padding: 0;
 }
 
 .john1,
 .bob1{
     padding: 12px;
 }
-.bob h4,
-.john h4{
+.bob1 h4,
+.john1 h4{
     margin: 0 5px 0 5px;
 }
 
-.bob h5,
-.john h5{
+.bob1 h5,
+.john1 h5{
     margin: 0 5px 0 5px;
     border-bottom: 3px solid rgb(199, 139, 7);
 }
 
-.john img,
-.bob img{
+.johni,
+.bobi{
     max-width: 100%;
+    width: 100%;
+    height: auto;
+    overflow:hidden;
+    object-fit: cover;
+    margin-top: 5px;
 }
 
-.bob p,
-.john p{
+.bob1 p,
+.john1 p{
     padding: 10px;
 }
 
+.contact{
+    margin: 1%;
+}
 
+.c1,
+.c1 h3{
+    margin-top: 0;
+    padding-top: 0;
+}
 
+.c1{
+    display:flex;
+    flex-direction: column;
+  }
+  
+.c1 label:nth-child(n),
+.c1 input:nth-child(n){
+    flex-grow: 1;
+    width:100%;
+}
 
+.c1 button{
+    flex-grow: 1;
+    width:100px;
+    height: 20px;
+    color: rgb(199, 139, 7);
+}
 
+.c1 textarea:nth-child(n){
+    flex-grow: 1;
+    width:100%;
+    height: 120px;
+}
 
+table{
+    border: 1px solid black;
+    width: 100%;
+}
 
+caption h3{
+    display: inline-block;
+}
 
+th{
+    border: 1px solid black;
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(255, 230, 172);
+}
 
+th, 
+td{
+    height: 4em;
+    border: 1px solid black;
+    padding: 20px;
+}
 
+footer{
+    padding: 10px; 
+    color: rgb(199, 139, 7);
+}
 
+footer a:link,
+footer a:visited,
+footer a:hover,
+footer a:focus{
+    color: rgb(199, 139, 7);
+}
 
-
-@media screen and (min-width:600px) {
+@media screen and (min-width:800px) {
+    
     nav{
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-        margin:auto;
-        padding: 20px;
     }
 
     .bannerimage{
@@ -576,21 +637,22 @@ button{
         padding-right: 5%;
     }
 
-    /* .team{
+    .team{
         width:100%;
         padding-left: 10%;
         padding-right: 10%;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: 0.5fr 5fr 5fr;
+        grid-template-rows: 0.5fr 3fr 3fr;
         grid-template-areas: 
-        "zero zero"
+        "zerow zerow"
         "onew twow"
         "threew fourw";
+        grid-gap: 20px 0px;
     }
 
     .team h2{
-        grid-area: zero;
+        grid-area: zerow;
     }
 
     .team .johni{
@@ -602,10 +664,40 @@ button{
     }
 
     .team .bobi{
-        grid-area: threew;
+        grid-area: fourw;
     }
     
     .team .bob1{
-        grid-area: ourw;
-    } */
-}
+        grid-area: threew;
+    } 
+
+    .contact{
+        width:100%;
+        padding-left: 10%;
+        padding-right: 10%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 0.5fr 5fr 3fr;
+        grid-template-areas: 
+        "zeroe zeroe"
+        "onee twoe"
+        "threee threee";
+        grid-gap: 20px 0px;
+    }
+
+    .contact h2{
+        grid-area: zeroe;
+    }
+    
+    .contact .c1{
+        grid-area: onee;
+        padding: 2rem;
+    }
+
+    .contact .c2{
+        grid-area: three;
+    }
+
+    .contact .c3{
+        grid-area: twoe;
+    }

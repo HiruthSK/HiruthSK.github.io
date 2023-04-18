@@ -16,22 +16,25 @@
 
         <header>
             <!-- Navigation -->
-            <nav>
-                <div class="logo">
-                    <img src="./images/logo.png" alt="Three Start Media Logo">
-                </div>
-                <ul>
-                    <li><a href="./index.html" class="active">Home</a></li>
-                    <li><a href="#about">About Us</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#team">Team</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-                <form action="search.html" method="get">
-                    <input type="text" id="searchbox" name="searchbox" placeholder="Search">
-                    <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
-                </form>
-            </nav>
+            <div class="navi">
+
+                <nav>
+                    <div class="logo">
+                        <img src="./images/logo.png" alt="Three Start Media Logo">
+                    </div>
+                    <ul>
+                        <li><a href="./index.html" class="active">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#team">Team</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                    <form action="search.html" method="get">
+                        <input type="text" id="searchbox" name="searchbox" placeholder="Search">
+                        <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </form>
+                </nav>
+            </div>
             <!-- Banner -->
             <div class="banner">
                 <div class="welcome">
@@ -141,7 +144,6 @@
             <!-- Team Section -->
             <div class="team" id="team">
                 <h2>Our Team</h2>
-                <div class="john">
                     <img class="johni" src="./images/john.jpg" alt="picture of John Doe">
                     <div class="john1">
 
@@ -152,10 +154,8 @@
                             laborum perferendis quia repudiandae nemo adipisci deleniti iure velit voluptatem accusamus non
                             debitis dignissimos corporis dolores!</p>
                     </div>
-                </div>
-                <div class="bob">
                     <img class="bobi" src="./images/bob.jpg" alt="picture of Bob Rite">
-                    <div clss="bob1">
+                    <div class="bob1">
 
                         <h4>Bob Rite</h4>
                         <h5>CFO and Co-owner</h5>
@@ -164,29 +164,28 @@
                             laborum perferendis quia repudiandae nemo adipisci deleniti iure velit voluptatem accusamus non
                             debitis dignissimos corporis dolores!</p>
                     </div>
-                </div>
             </div>
             <!-- Contact Section -->
             <div class="contact" id="contact">
                 <h2>Contact US</h2>
-                <section>
+                <section class="c1">
                     <h3>Send us a messsage</h3>
                     <form action="message.html" method="get"></form>
                     <div>
-                        <label for="fullname">Full Name</label>
+                        <label for="fullname">Full Name</label><br>
                         <input type="text" id="fullname" name="fullname">
                     </div>
                     <div>
-                        <label for="mail">Email</label>
+                        <label for="mail">Email</label><br>
                         <input type="text" id="mail" name="mail">
                     </div>
                     <div>
-                        <label for="message">Message</label>
+                        <label for="message">Message</label><br>
                         <textarea id="message" name="message"></textarea>
                     </div>
                     <button type="submit">Send</button>
                 </section>
-                <section>
+                <section class="c2">
                     <table>
                         <caption>
                             <h3>Hours of operation</h3>
@@ -208,7 +207,7 @@
                             </tr>
                         </tbody>
                     </table>
-                    <section>
+                    <section class="c3">
                         <h3>Location</h3>
                         <div class="map">
                             <!-- Google Maps Link -->
